@@ -291,6 +291,8 @@ var CardRenderer = {
       this.card = card; //the actual game card
       this.frontTexture = front;
       cardRenderer.loadingTextures.push(this.frontTexture);
+	  this.loresTexture = front;
+	  this.hiresTexture = null;
       this.backTexture = back.back;
       this.glowTextures = glow;
       this.faceUp = false; //flipProgress will tend towards the result required by this
@@ -1027,8 +1029,34 @@ var CardRenderer = {
 	    if (Math.round(Math.abs(2*this.knownSprite.rotation/Math.PI)) == 1) this.knownSprite.anchor.set(-1, 0.6);
         //change scale as required
         var scalingratio = 0.5;
-        if (this.zoomed && (this.faceUp || this.canView))
+        if (this.zoomed && (this.faceUp || this.canView)) {
           scalingratio = fieldZoom;
+		  //load high-res version, if not already loaded/loading
+		  if (this.hiresTexture) {
+			  this.frontTexture = this.hiresTexture;
+		  }
+		  else {
+			  const imgaddr = "images/hires/"+this.card.imageFile;
+			  if (!this.app.loadingHiresTextures) {
+				  this.app.loadingHiresTextures = {};
+				  this.app.loadedHiresTextures = {};
+			  }
+			  if (!this.app.loadingHiresTextures[imgaddr]) {
+				  this.app.loadingHiresTextures[imgaddr] = PIXI.BaseTexture.from(imgaddr);
+				  this.app.loadingHiresTextures[imgaddr].resolution = 2;
+				  this.app.loadingHiresTextures[imgaddr].once('loaded', () => {
+					this.app.loadedHiresTextures[imgaddr] = new PIXI.Texture(this.app.loadingHiresTextures[imgaddr]);
+				  });
+			  }
+			  if (this.app.loadedHiresTextures[imgaddr]) {
+				  this.hiresTexture = this.app.loadedHiresTextures[imgaddr];
+				  this.frontTexture = this.hiresTexture;
+			  }
+		  }
+		}
+		else {
+			this.frontTexture = this.loresTexture;
+		}
         if (
           this == pixi_holdCard &&
           !pixi_holdZoom &&
@@ -1345,7 +1373,7 @@ var CardRenderer = {
 
   //Create one of these to initialise a renderer
   Renderer: class {
-    constructor(resizeCallback) {
+    constructor(resizeCallback, accessibilityMode="default") {
       var w = window.innerWidth;
       var h = window.innerHeight;
       this.app = new PIXI.Application(w, h, { transparent: true });
@@ -1482,25 +1510,28 @@ var CardRenderer = {
 
       this.showFPS = false;
       this.framerates = []; //to calculate a periodic average
-      //key events to toggle fps display and faceoff AI, and as shortcut for continue
-      window.addEventListener(
-        "keydown",
-        function (event) {
-          if (event.key == "f") {
-            cardRenderer.showFPS = !cardRenderer.showFPS;
-            if (cardRenderer.showFPS) $("#fps").show();
-            else $("#fps").hide();
-          }
-		  else if (event.key == "g" && corp.AI && runner.AI) {
-			pauseFaceoff = !pauseFaceoff;
-			if (!pauseFaceoff) Main();
-		  }
-		  else if (event.key == "Enter") {
+	  
+	  if (accessibilityMode == "default") {
+        //key events to toggle fps display and faceoff AI, and as shortcut for continue
+        window.addEventListener(
+          "keydown",
+          function (event) {
+            if (event.key == "f") {
+              cardRenderer.showFPS = !cardRenderer.showFPS;
+              if (cardRenderer.showFPS) $("#fps").show();
+              else $("#fps").hide();
+            }
+		    else if (event.key == "g" && corp.AI && runner.AI) {
+			  pauseFaceoff = !pauseFaceoff;
+			  if (!pauseFaceoff) Main();
+		    }
+		    else if (event.key == "Enter") {
 			  $('#footerbutton-n').click();
-		  }
-        },
-        false
-      );
+		    }
+          },
+          false
+        );
+	  }
 
       //add a global ticker
       this.app.ticker.add(function (delta) {
