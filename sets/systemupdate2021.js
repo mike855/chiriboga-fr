@@ -4,6 +4,7 @@ setIdentifiers.push('su21');
 cardSet[31001] = {
   title: 'Quetzal: Free Spirit',
   imageFile: "31001.png",
+  cardText: "0 credits: Break 1 barrier subroutine. Use this ability only once per turn.",
   elo: 1506,
   player: runner,
   link: 0,
@@ -101,6 +102,7 @@ cardSet[31001] = {
 cardSet[31002] = {
   title: 'Reina Roja: Freedom Fighter',
   imageFile: "31002.png",
+  cardText: "The first piece of ice the Corp rezzes each turn costs 1 credit more to rez.",
   elo: 1460,
   player: runner,
   faction: "Anarch",
@@ -141,6 +143,7 @@ cardSet[31002] = {
 cardSet[31003] = {
 	title: 'En Passant',
 	imageFile: "31003.png",
+    cardText: "Play only if you made a successful run this turn. Trash 1 unrezzed piece of ice you passed during your last run.",
 	elo: 1534,
 	player: runner,
 	faction: "Anarch",
@@ -225,6 +228,7 @@ cardSet[31003] = {
 cardSet[31004] = {
   title: 'Retrieval Run',
   imageFile: "31004.png",
+  cardText: "Run Archives. If successful, instead of breaching Archives, you may install 1 program from your heap, ignoring all costs.",
   elo: 1547,
   player: runner,
   faction: "Anarch",
@@ -296,6 +300,7 @@ cardSet[31004] = {
 cardSet[31005] = {
   title: "Clot",
   imageFile: "31005.png",
+  cardText: "The Corp cannot score an agenda during the same turn they installed that agenda. When the Corp purges virus counters, trash this program.",
   elo: 1833,
   player: runner,
   faction: "Anarch",
@@ -360,6 +365,7 @@ cardSet[31005] = {
 cardSet[31006] = {
   title: "Corroder",
   imageFile: "31006.png",
+  cardText: "Interface -> 1 credit: Break 1 barrier subroutine. 1 credit: +1 strength.",
   elo: 1799,
   player: runner,
   faction: "Anarch",
@@ -462,6 +468,7 @@ cardSet[31006] = {
 cardSet[31007] = {
   title: "Imp",
   imageFile: "31007.png",
+  cardText: "When you install this program, place 2 virus counters on it. Access -> Hosted virus counter: Trash the card you are accessing. Use this ability only once per turn.",
   elo: 1779,
   player: runner,
   faction: "Anarch",
@@ -541,6 +548,7 @@ cardSet[31007] = {
 cardSet[31008] = {
   title: "Mimic",
   imageFile: "31008.png",
+  cardText: "Interface -> 1 credit: Break 1 sentry subroutine.",
   elo: 1701,
   player: runner,
   faction: "Anarch",
@@ -620,6 +628,7 @@ cardSet[31008] = {
 cardSet[31009] = {
   title: "Ice Carver",
   imageFile: "31009.png",
+  cardText: "While you are encountering a piece of ice, it gets -1 strength.",
   elo: 1662,
   player: runner,
   faction: "Anarch",
@@ -649,6 +658,7 @@ cardSet[31009] = {
 cardSet[31010] = {
   title: "Liberated Account",
   imageFile: "31010.png",
+  cardText: "When you install this resource, load 16 credits onto it. When it is empty, trash it. click: Take 4 credits from this resource.",
   elo: 1785,
   player: runner,
   faction: "Anarch",
@@ -692,6 +702,7 @@ cardSet[31010] = {
 cardSet[31011] = {
   title: "Scrubber",
   imageFile: "31011.png",
+  cardText: "2 recurring credits (When you install this card and before your turn begins, refill to 2 hosted credits.) You can spend hosted credits to pay trash costs.",
   elo: 1565,
   player: runner,
   faction: "Anarch",
@@ -718,6 +729,7 @@ cardSet[31011] = {
 cardSet[31012] = {
   title: "Xanadu",
   imageFile: "31012.png",
+  cardText: "The rez cost of each piece of ice is increased by 1 credit.",
   elo: 1535,
   player: runner,
   faction: "Anarch",
@@ -753,6 +765,7 @@ cardSet[31012] = {
 cardSet[31013] = {
   title: 'Ken "Express" Tenma: Disappeared Clone',
   imageFile: "31013.png",
+  cardText: "The first time each turn you play a run event, gain 1 credit.",
   elo: 1566,
   player: runner,
   faction: "Criminal",
@@ -796,6 +809,7 @@ cardSet[31013] = {
 cardSet[31014] = {
   title: 'Steve Cambridge: Master Grifter',
   imageFile: "31014.png",
+  cardText: "The first time each turn you make a successful run on HQ, you may choose 2 cards in your heap. If you do, the Corp removes 1 of those cards from the game, then you add the other card to your grip.",
   elo: 1751,
   player: runner,
   faction: "Criminal",
@@ -939,6 +953,7 @@ cardSet[31014] = {
 cardSet[31015] = {
   title: "Career Fair",
   imageFile: "31015.png",
+  cardText: "Install 1 resource from your grip, paying 3 credits less.",
   elo: 1829,
   player: runner,
   faction: "Criminal",
@@ -999,6 +1014,7 @@ cardSet[31015] = {
 cardSet[31016] = {
 	title: 'Emergency Shutdown',
 	imageFile: "31016.png",
+    cardText: "Play only if you made a successful run on HQ this turn. Derez 1 installed piece of ice.",
 	elo: 1586,
 	player: runner,
 	faction: "Criminal",
@@ -1104,6 +1120,7 @@ cardSet[31016] = {
 cardSet[31017] = {
 	title: 'Forged Activation Orders',
 	imageFile: "31017.png",
+    cardText: "Choose 1 unrezzed piece of ice. The Corp may rez that ice. If they do not, they trash it.",
 	elo: 1527,
 	player: runner,
 	faction: "Criminal",
@@ -1207,6 +1224,7 @@ cardSet[31017] = {
 cardSet[31018] = {
   title: "Inside Job",
   imageFile: "31018.png",
+  cardText: "Run any server. The first time this run you encounter a piece of ice, bypass it.",
   elo: 1821,
   player: runner,
   faction: "Criminal",
@@ -1278,6 +1296,7 @@ cardSet[31018] = {
 cardSet[31019] = {
   title: "Legwork",
   imageFile: "31019.png",
+  cardText: "Run HQ. If successful, access 2 additional cards when you breach HQ.",
   elo: 1787,
   player: runner,
   faction: "Criminal",
@@ -1333,6 +1352,7 @@ cardSet[31019] = {
 cardSet[31020] = {
   title: "Networking",
   imageFile: "31020.png",
+  cardText: "Remove 1 tag. Then, you may pay 1 credit to add this event to your grip.",
   elo: 1494,
   player: runner,
   faction: "Criminal",
@@ -1377,6 +1397,7 @@ cardSet[31020] = {
 cardSet[31021] = {
   title: "Abagnale",
   imageFile: "31021.png",
+  cardText: "Interface -> 1 credit: Break 1 code gate subroutine. 2 credits: +2 strength. trash: Bypass the code gate you are encountering.",
   elo: 1598,
   player: runner,
   faction: "Criminal",
@@ -1514,6 +1535,7 @@ cardSet[31021] = {
 cardSet[31022] = {
   title: "Femme Fatale",
   imageFile: "31022.png",
+  cardText: "Interface -> 1 credit: Break 1 sentry subroutine. 2 credits: +1 strength. When you install this program, choose 1 installed piece of ice. Whenever you encounter the chosen ice, you may pay 1 credit for each subroutine it has. If you do, bypass that ice.",
   elo: 1684,
   player: runner,
   faction: "Criminal",
@@ -1712,6 +1734,7 @@ cardSet[31022] = {
 cardSet[31023] = {
   title: "Sneakdoor Beta",
   imageFile: "31023.png",
+  cardText: "click: Run Archives. If that run would be declared successful, change the attacked server to HQ for the remainder of that run.",
   elo: 1695,
   player: runner,
   faction: "Criminal",
@@ -1813,6 +1836,7 @@ cardSet[31023] = {
 cardSet[31024] = {
   title: "Security Testing",
   imageFile: "31024.png",
+  cardText: "When your turn begins, you may choose a server. The first time each turn you make a successful run on the chosen server, instead of breaching it, gain 2 credits.",
   elo: 1660,
   player: runner,
   faction: "Criminal",
@@ -1938,6 +1962,7 @@ cardSet[31024] = {
 cardSet[31025] = {
   title: 'Ayla "Bios" Rahim: Simulant Specialist',
   imageFile: "31025.png",
+  cardText: "Before drawing your starting hand, set aside the top 6 cards of your stack facedown. (You may look at those cards at any time.) Shuffle 2 of those cards into your stack. click: Add 1 card set aside with this identity to your grip.",
   elo: 1560,
   player: runner,
   faction: "Shaper",
@@ -2055,6 +2080,7 @@ cardSet[31025] = {
 cardSet[31026] = {
   title: 'Rielle "Kit" Peddler: Transhuman',
   imageFile: "31026.png",
+  cardText: 	"The first time each turn you encounter a piece of ice, it gains code gate for the remainder of this run.",
   elo: 1625,
   player: runner,
   faction: "Shaper",
@@ -2161,6 +2187,7 @@ cardSet[31026] = {
 cardSet[31027] = {
   title: "Diesel",
   imageFile: "31027.png",
+  cardText: "Draw 3 cards.",
   elo: 1870,
   player: runner,
   faction: "Shaper",
@@ -2187,6 +2214,7 @@ cardSet[31027] = {
 cardSet[31028] = {
   title: "Test Run",
   imageFile: "31028.png",
+  cardText: "Search either your stack or your heap for 1 program. (Shuffle your stack if you searched it.) Install that program, ignoring all costs. When your turn ends, if that program has not been uninstalled, add it to the top of your stack.",
   elo: 1595,
   player: runner,
   faction: "Shaper",
@@ -2309,6 +2337,7 @@ cardSet[31028] = {
 cardSet[31029] = {
   title: "The Maker's Eye",
   imageFile: "31029.png",
+  cardText: "Run R&D. If successful, access 2 additional cards when you breach R&D.",
   elo: 1744,
   player: runner,
   faction: "Shaper",
@@ -2367,6 +2396,7 @@ cardSet[31029] = {
 cardSet[31030] = {
   title: "Atman",
   imageFile: "31030.png",
+  cardText: "When you install this program, you may pay X credits to place X power counters on it. This program gets +1 strength for each hosted power counter, and it can only interface with ice of exactly equal strength. Interface -> 1 credit: Break 1 subroutine.",
   elo: 1723,
   player: runner,
   faction: "Shaper",
@@ -2552,6 +2582,7 @@ cardSet[31030] = {
 cardSet[31031] = {
   title: "Chameleon",
   imageFile: "31031.png",
+  cardText: "When you install this program, choose barrier, code gate, or sentry. When your discard phase ends, add this program to your grip. Interface -> 1 credit: Break 1 subroutine on a piece of ice that has the chosen subtype.",
   elo: 1588,
   player: runner,
   faction: "Shaper",
@@ -2746,6 +2777,7 @@ cardSet[31031] = {
 cardSet[31032] = {
   title: "Egret",
   imageFile: "31032.png",
+  cardText: "Install only on a rezzed piece of ice. Host ice gains barrier, code gate, and sentry.",
   elo: 1464,
   player: runner,
   faction: "Shaper",
@@ -2814,6 +2846,7 @@ cardSet[31032] = {
 cardSet[31033] = {
   title: "Gordian Blade",
   imageFile: "31033.png",
+  cardText: "Interface -> 1 credit: Break 1 code gate subroutine. 1 credit: +1 strength for the remainder of this run.",
   elo: 1665,
   player: runner,
   faction: "Shaper",
@@ -2915,6 +2948,7 @@ cardSet[31033] = {
 cardSet[31034] = {
   title: "Paricia",
   imageFile: "31034.png",
+  cardText: "2 recurring credits (When you install this card and before your turn begins, refill to 2 hosted credits.) You can spend hosted credits to pay trash costs of assets.",
   elo: 1575,
   player: runner,
   faction: "Shaper",
@@ -2945,6 +2979,7 @@ cardSet[31034] = {
 cardSet[31035] = {
   title: "Aesop's Pawnshop",
   imageFile: "31035.png",
+  cardText: "When your turn begins, you may trash 1 of your other installed cards. If you do, gain 3 credits.",
   elo: 1850,
   player: runner,
   faction: "Shaper",
@@ -3118,6 +3153,7 @@ cardSet[31035] = {
 cardSet[31036] = {
   title: "Professional Contacts",
   imageFile: "31036.png",
+  cardText: "click: Gain 1 credit and draw 1 card.",
   elo: 1807,
   player: runner,
   faction: "Shaper",
@@ -3174,6 +3210,7 @@ cardSet[31036] = {
 cardSet[31037] = {
   title: "Dirty Laundry",
   imageFile: "31037.png",
+  cardText: "Run any server. When that run ends, if it was successful, gain 5 credits.",
   elo: 1865,
   player: runner,
   faction: "Neutral",
@@ -3224,6 +3261,7 @@ cardSet[31037] = {
 cardSet[31038] = {
   title: "Prepaid VoicePAD",
   imageFile: "31038.png",
+  cardText: "1 recurring credit (When you install this card and before your turn begins, refill to 1 hosted credit.) You can spend hosted credits to play events.",
   elo: 1674,
   player: runner,
   faction: "Neutral",
@@ -3281,6 +3319,7 @@ cardSet[31038] = {
 cardSet[31039] = {
   title: "Earthrise Hotel",
   imageFile: "31039.png",
+  cardText: "When you install this resource, load 3 power counters onto it. When it is empty, trash it. When your turn begins, remove 1 hosted power counter and draw 2 cards.",
   elo: 1849,
   player: runner,
   faction: "Neutral",
@@ -3329,6 +3368,7 @@ cardSet[31039] = {
 cardSet[31040] = {
   title: "Haas-Bioroid: Architects of Tomorrow",
   imageFile: "31040.png",
+  cardText: "The first time each turn the Runner passes a rezzed piece of bioroid ice, you may rez 1 bioroid card, paying 4 credits less.",
   elo: 1518,
   player: corp,
   faction: "Haas-Bioroid",
@@ -3421,6 +3461,7 @@ cardSet[31040] = {
 cardSet[31041] = {
   title: "Project Vitruvius",
   imageFile: "31041.png",
+  cardText: "When you score this agenda, place 1 agenda counter on it for each hosted advancement counter past 3. Hosted agenda counter: Add 1 card from Archives to HQ.",
   elo: 1865,
   player: corp,
   faction: "Haas-Bioroid",
@@ -3502,6 +3543,7 @@ cardSet[31041] = {
 cardSet[31042] = {
   title: "Marilyn Campaign",
   imageFile: "31042.png",
+  cardText: "When you rez this asset, load 8 credits onto it. When it is empty, trash it. When your turn begins, take 2 credits from this asset. Interrupt -> When this asset would be trashed, you may shuffle it into R&D instead of adding it to Archives. (It is still considered trashed.)",
   elo: 1802,
   player: corp,
   faction: "Haas-Bioroid",
@@ -3593,6 +3635,7 @@ cardSet[31042] = {
 cardSet[31043] = {
   title: "Eli 1.0",
   imageFile: "31043.png",
+  cardText: "Lose click: Break 1 subroutine on this ice. Only the Runner can use this ability. Subroutine End the run. Subroutine End the run.",
   elo: 1871,
   player: corp,
   faction: "Haas-Bioroid",
@@ -3670,6 +3713,7 @@ cardSet[31043] = {
 cardSet[31044] = {
   title: "Magnet",
   imageFile: "31044.png",
+  cardText: "When you rez this ice, choose 1 installed program hosted on a piece of ice. Move that program onto this ice. Each hosted program loses all abilities. Subroutine End the run.",
   elo: 1644,
   player: corp,
   faction: "Haas-Bioroid",
@@ -3749,6 +3793,7 @@ cardSet[31044] = {
 cardSet[31045] = {
   title: "Ravana 1.0",
   imageFile: "31045.png",
+  cardText: "Lose click: Break 1 subroutine on this ice. Only the Runner can use this ability. Subroutine Resolve 1 subroutine on another rezzed bioroid ice. Subroutine Resolve 1 subroutine on another rezzed bioroid ice.",
   elo: 1582,
   player: corp,
   faction: "Haas-Bioroid",
@@ -3906,6 +3951,7 @@ cardSet[31045] = {
 cardSet[31046] = {
   title: "Rototurret",
   imageFile: "31046.png",
+  cardText: "Subroutine Trash 1 installed program. Subroutine End the run.",
   elo: 1560,
   player: corp,
   faction: "Haas-Bioroid",
@@ -3967,6 +4013,7 @@ cardSet[31046] = {
 cardSet[31047] = {
   title: "Archived Memories",
   imageFile: "31047.png",
+  cardText: "Add 1 card from Archives to HQ.",
   elo: 1732,
   player: corp,
   faction: "Haas-Bioroid",
@@ -4014,6 +4061,7 @@ cardSet[31047] = {
 cardSet[31048] = {
   title: "Biotic Labor",
   imageFile: "31048.png",
+  cardText: "Gain click click.",
   elo: 1919,
   player: corp,
   faction: "Haas-Bioroid",
@@ -4030,6 +4078,7 @@ cardSet[31048] = {
 cardSet[31049] = {
   title: "Corporate Troubleshooter",
   imageFile: "31049.png",
+  cardText: "X credits, trash: Choose 1 rezzed piece of ice protecting this server. That ice gets +X strength for the remainder of the turn.",
   elo: 1555,
   player: corp,
   faction: "Haas-Bioroid",
@@ -4244,6 +4293,7 @@ cardSet[31049] = {
 cardSet[31050] = {
   title: "Jinteki: Personal Evolution",
   imageFile: "31050.png",
+  cardText: "Whenever an agenda is scored or stolen, do 1 net damage.",
   elo: 1732,
   player: corp,
   faction: "Jinteki",
@@ -4269,6 +4319,7 @@ cardSet[31050] = {
 cardSet[31051] = {
   title: "House of Knives",
   imageFile: "31051.png",
+  cardText: "When you score this agenda, place 3 agenda counters on it. Hosted agenda counter: Do 1 net damage. Use this ability only during a run and only once per run.",
   elo: 1698,
   player: corp,
   faction: "Jinteki",
@@ -4338,6 +4389,7 @@ cardSet[31051] = {
 cardSet[31052] = {
   title: "Nisei MK II",
   imageFile: "31052.png",
+  cardText: "When you score this agenda, place 1 agenda counter on it. Hosted agenda counter: End the run.",
   elo: 1873,
   player: corp,
   faction: "Jinteki",
@@ -4396,6 +4448,7 @@ cardSet[31052] = {
 cardSet[31053] = {
   title: "Ronin",
   imageFile: "31053.png",
+  cardText: "You can advance this asset. click, trash: Do 3 net damage. Use this ability only if there are 4 or more hosted advancement counters.",
   elo: 1686,
   player: corp,
   faction: "Jinteki",
@@ -4446,6 +4499,7 @@ cardSet[31053] = {
 cardSet[31054] = {
   title: "Snare!",
   imageFile: "31054.png",
+  cardText: "While the Runner is accessing this asset in R&D, they must reveal it. When the Runner accesses this asset anywhere except in Archives, you may pay 4 credits. If you do, give the Runner 1 tag and do 3 net damage.",
   elo: 1771,
   player: corp,
   faction: "Jinteki",
@@ -4525,6 +4579,7 @@ cardSet[31054] = {
 cardSet[31055] = {
   title: "Lotus Field",
   imageFile: "31055.png",
+  cardText: "The strength of this ice cannot be lowered. Subroutine End the run.",
   elo: 1551,
   player: corp,
   faction: "Jinteki",
@@ -4554,6 +4609,7 @@ cardSet[31055] = {
 cardSet[31056] = {
   title: "Swordsman",
   imageFile: "31056.png",
+  cardText: "The Runner cannot break subroutines on this ice using AI programs. Subroutine Trash 1 installed AI program. Subroutine Do 1 net damage.",
   elo: 1592,
   player: corp,
   faction: "Jinteki",
@@ -4618,6 +4674,7 @@ cardSet[31056] = {
 cardSet[31057] = {
   title: "Celebrity Gift",
   imageFile: "31057.png",
+  cardText: "As an additional cost to play this operation, spend click. Reveal up to 5 cards in HQ. Gain 2 credits for each card you revealed this way.",
   elo: 1718,
   player: corp,
   faction: "Jinteki",
@@ -4697,7 +4754,10 @@ cardSet[31057] = {
 	choices.push({
       id: choices.length,
       label: "Reveal",
-      button: "Reveal",
+      multiSelectDynamicButtonText: function(numSelected) {
+		return "Reveal "+numSelected+" card"+(numSelected == 1?'':'s');
+	  },
+	  button: "Reveal 0 cards",
     });
 	for (var i = 0; i < choices.length; i++) {
 	  choices[i].cards = Array(Math.min(5,choices.length-1)).fill(null);
@@ -4744,6 +4804,7 @@ cardSet[31057] = {
 cardSet[31058] = {
   title: "Trick of Light",
   imageFile: "31058.png",
+  cardText: "Choose 1 installed card you can advance. Move up to 2 advancement counters from 1 other card to the chosen card.",
   elo: 1665,
   player: corp,
   faction: "Jinteki",
@@ -4833,6 +4894,7 @@ cardSet[31058] = {
 cardSet[31059] = {
   title: "Hokusai Grid",
   imageFile: "31059.png",
+  cardText: "Whenever the Runner makes a successful run on this server, do 1 net damage. Limit 1 region per server.",
   elo: 1682,
   player: corp,
   faction: "Jinteki",
@@ -4869,6 +4931,7 @@ cardSet[31059] = {
 cardSet[31060] = {
   title: "Near-Earth Hub: Broadcast Center",
   imageFile: "31060.png",
+  cardText: "The first time each turn you create a remote server, draw 1 card.",
   elo: 1837,
   player: corp,
   faction: "NBN",
@@ -4905,6 +4968,7 @@ cardSet[31060] = {
 cardSet[31061] = {
   title: "License Acquisition",
   imageFile: "31061.png",
+  cardText: "When you score this agenda, you may reveal 1 asset or upgrade in HQ or Archives. Install and rez that card, ignoring all costs.",
   elo: 1445,
   player: corp,
   faction: "NBN",
@@ -5062,6 +5126,7 @@ cardSet[31061] = {
 cardSet[31062] = {
   title: "Project Beale",
   imageFile: "31062.png",
+  cardText: "When you score this agenda, place 1 agenda counter on it for every 2 hosted advancement counters past 3. This agenda is worth 1 more agenda point for each hosted agenda counter.",
   elo: 1886,
   player: corp,
   faction: "NBN",
@@ -5105,6 +5170,7 @@ cardSet[31062] = {
 cardSet[31063] = {
   title: "Daily Business Show",
   imageFile: "31063.png",
+  cardText: "Interrupt -> The first time each turn you would draw any number of cards, increase the number of cards you will draw by 1. When you draw those cards, add 1 of them to the bottom of R&D.",
   elo: 1828,
   player: corp,
   faction: "NBN",
@@ -5196,6 +5262,7 @@ cardSet[31063] = {
 cardSet[31064] = {
   title: "Reversed Accounts",
   imageFile: "31064.png",
+  cardText: "You can advance this asset. click, trash: The Runner loses 4 credits for each hosted advancement counter.",
   elo: 1654,
   player: corp,
   faction: "NBN",
@@ -5264,6 +5331,7 @@ cardSet[31064] = {
 cardSet[31065] = {
   title: "Pop-up Window",
   imageFile: "31065.png",
+  cardText: "When the Runner encounters this ice, gain 1 credit. Subroutine End the run unless the Runner pays 1 credit.",
   elo: 1716,
   player: corp,
   faction: "NBN",
@@ -5324,6 +5392,7 @@ cardSet[31065] = {
 cardSet[31066] = {
   title: "Tollbooth",
   imageFile: "31066.png",
+  cardText: "When the Runner encounters this ice, they must pay 3 credits, if able. If they do not, end the run. Subroutine End the run.",
   elo: 1896,
   player: corp,
   faction: "NBN",
@@ -5364,6 +5433,7 @@ cardSet[31066] = {
 cardSet[31067] = {
   title: "Wraparound",
   imageFile: "31067.png",
+  cardText: "While there are no installed fracter programs, this ice gets +7 strength. Subroutine End the run.",
   elo: 1742,
   player: corp,
   faction: "NBN",
@@ -5408,6 +5478,7 @@ cardSet[31067] = {
 cardSet[31068] = {
   title: "Psychographics",
   imageFile: "31068.png",
+  cardText: "X must be equal to or less than the number of tags the Runner has. Place X advancement counters on 1 installed card you can advance.",
   elo: 1728,
   player: corp,
   faction: "NBN",
@@ -5479,6 +5550,7 @@ cardSet[31068] = {
 cardSet[31069] = {
   title: "SanSan City Grid",
   imageFile: "31069.png",
+  cardText: "Each agenda in the root of this server gets -1 advancement requirement. Limit 1 region per server.",
   elo: 1903,
   player: corp,
   faction: "NBN",
@@ -5509,6 +5581,7 @@ cardSet[31069] = {
 cardSet[31070] = {
   title: "Weyland Consortium: Building a Better World",
   imageFile: "31070.png",
+  cardText: "Whenever you play a transaction operation, gain 1 credit.",
   elo: 1478,
   player: corp,
   faction: "Weyland Consortium",
@@ -5529,6 +5602,7 @@ cardSet[31070] = {
 cardSet[31071] = {
   title: "Hostile Takeover",
   imageFile: "31071.png",
+  cardText: "When you score this agenda, gain 7 credits and take 1 bad publicity.",
   elo: 1902,
   player: corp,
   faction: "Weyland Consortium",
@@ -5551,6 +5625,7 @@ cardSet[31071] = {
 cardSet[31072] = {
   title: "Oaktown Renovation",
   imageFile: "31072.png",
+  cardText: "Install only faceup. (This agenda is neither rezzed nor unrezzed.) Whenever you advance this agenda, gain 2 credits. If there are 5 or more hosted advancement counters (including the counter just placed), gain 3 credits instead.",
   elo: 	1710,
   player: corp,
   faction: "Weyland Consortium",
@@ -5587,6 +5662,7 @@ cardSet[31072] = {
 cardSet[31073] = {
   title: "Project Atlas",
   imageFile: "31073.png",
+  cardText: "When you score this agenda, place 1 agenda counter on it for each hosted advancement counter past 3. Hosted agenda counter: Search R&D for 1 card and reveal it. Add it to HQ.",
   elo: 1902,
   player: corp,
   faction: "Weyland Consortium",
@@ -5673,6 +5749,7 @@ cardSet[31073] = {
 cardSet[31074] = {
   title: "Corporate Town",
   imageFile: "31074.png",
+  cardText: "As an additional cost to rez this asset, forfeit 1 agenda. When your turn begins, you may trash 1 installed resource. Trashing a resource this way cannot be prevented.",
   elo: 1515,
   player: corp,
   faction: "Weyland Consortium",
@@ -5770,6 +5847,7 @@ cardSet[31074] = {
 cardSet[31075] = {
   title: "Archer",
   imageFile: "31075.png",
+  cardText: "As an additional cost to rez this ice, forfeit 1 agenda. Subroutine Gain 2 credits. Subroutine Trash 1 installed program. Subroutine Trash 1 installed program. Subroutine End the run.",
   elo: 1750,
   player: corp,
   faction: "Weyland Consortium",
@@ -5892,6 +5970,7 @@ cardSet[31075] = {
 cardSet[31076] = {
   title: "Hortum",
   imageFile: "31076.png",
+  cardText: "You can advance this ice. If there are 3 or more hosted advancement counters, the Runner cannot break subroutines on this ice using AI programs. Subroutine Gain 1 credit. If there are 3 or more hosted advancement counters, instead gain 4 credits. Subroutine End the run. If there are 3 or more hosted advancement counters, instead search R&D for up to 2 cards. Add those cards to HQ, then end the run.",
   elo: 1693,
   player: corp,
   faction: "Weyland Consortium",
@@ -6042,6 +6121,7 @@ cardSet[31076] = {
 cardSet[31077] = {
   title: "Ice Wall",
   imageFile: "31077.png",
+  cardText: "You can advance this ice. It gets +1 strength for each hosted advancement counter. Subroutine End the run.",
   elo: 1628,
   player: corp,
   faction: "Weyland Consortium",
@@ -6102,6 +6182,7 @@ cardSet[31077] = {
 cardSet[31078] = {
   title: "Punitive Counterstrike",
   imageFile: "31078.png",
+  cardText: "Trace[5]. If successful, do X meat damage. X is equal to the sum of the printed agenda points on all agendas the Runner stole during their last turn.",
   elo: 1807,
   player: corp,
   faction: "Weyland Consortium",
@@ -6219,6 +6300,7 @@ cardSet[31078] = {
 cardSet[31079] = {
   title: "Crisium Grid",
   imageFile: "31079.png",
+  cardText: "Runs against this server cannot be declared successful. (This effect does not cause runs to become unsuccessful.) Limit 1 region per server.",
   elo: 1793,
   player: corp,
   faction: "Weyland Consortium",
@@ -6267,6 +6349,7 @@ cardSet[31079] = {
 cardSet[31080] = {
   title: "PAD Campaign",
   imageFile: "31080.png",
+  cardText: "When your turn begins, gain 1 credit.",
   elo: 1688,
   player: corp,
   faction: "Neutral",
@@ -6304,6 +6387,7 @@ cardSet[31080] = {
 cardSet[31081] = {
   title: "Enigma",
   imageFile: "31081.png",
+  cardText: "Subroutine The Runner loses click. Subroutine End the run.",
   elo: 1763,
   player: corp,
   faction: "Neutral",
@@ -6343,6 +6427,7 @@ cardSet[31081] = {
 cardSet[31082] = {
   title: "Subliminal Messaging",
   imageFile: "31082.png",
+  cardText: "Gain 1 credit. The first time each turn you play a copy of Subliminal Messaging, gain click. When your turn begins, if this card is in Archives and the Runner did not initiate any runs during their last turn, you may reveal this card and add it to HQ.",
   elo: 1660,
   player: corp,
   faction: "Neutral",
