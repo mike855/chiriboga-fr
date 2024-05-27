@@ -396,7 +396,7 @@
 			  var totalAgendaPoints = 0; //only for corp
 			  var outputLine = 0;
 			  json.cards = [];
-			  var splitText = $("#deck").val().split("\n");
+			  var splitText = $("#deck").val().replace("’","'").split("\n");
 			  for (var i = 0; i < splitText.length; i++) {
 				var cardCount = 0;
 				var cardTitle = "";
