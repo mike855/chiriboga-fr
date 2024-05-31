@@ -1,4 +1,7 @@
-# chiriboga
+# chiriboga in french
+
+French translation project
+
 Chiriboga implements the game Android: Netrunner with an AI opponent.
 Under GPL 3.0 license.
 
