@@ -11,8 +11,8 @@
 function MakeRun(server) {
   //Declare attacked server (Nisei 2021 1.1)
   attackedServer = server;
-  Log("Run initiated attacking " + server.serverName);
-  GainCredits(runner, corp.badPublicity, "bad publicity"); //(Nisei 2021 1.2)
+  Log("Piratage lancé sur " + server.serverName);
+  GainCredits(runner, corp.badPublicity, "mauvaise publicité"); //(Nisei 2021 1.2)
   AutomaticTriggers("automaticOnRunBegins", [server]); //(Nisei 2021 1.3) but only automatics at the moment
   approachIce = attackedServer.ice.length - 1;
   if (attackedServer.ice.length > 0) {
@@ -29,7 +29,7 @@ function MakeRun(server) {
  * @method Bypass
  */
 function Bypass() {
-	Log(GetTitle(attackedServer.ice[approachIce], true)+" bypassed");
+	Log(GetTitle(attackedServer.ice[approachIce], true)+" ignorée");
 	//clear AI run cache (the bypassed ice needs to be ignored)
 	if (runner.AI != null) {
 		runner.AI.cachedBestPath = null; //force a recalculation
@@ -47,7 +47,7 @@ function Bypass() {
 function Advance(card) {
   if (typeof card.advancement === "undefined") card.advancement = 0;
   card.advancement++;
-  Log("Card advanced");
+  Log("Carte avancée");
   AutomaticTriggers("automaticOnAdvance", [card]);
 }
 
@@ -62,8 +62,8 @@ function PlaceAdvancement(card, num) {
   if (num < 1) return;
   if (typeof card.advancement === "undefined") card.advancement = num;
   else card.advancement += num;
-  if (num == 1) Log("1 advancement token placed on " + GetTitle(card, true));
-  else Log(num + " advancement tokens placed on " + GetTitle(card, true));
+  if (num == 1) Log("1 jeton d'avancement placé sur " + GetTitle(card, true));
+  else Log(num + " jetons d'avancement placés sur " + GetTitle(card, true));
   UpdateCounters();
 }
 
@@ -85,7 +85,7 @@ function Rez(card, ignoreAllCosts=false, onRezResolve=null, context=null, allowC
 	  SpendCredits(
 		corp,
 		RezCost(card),
-		"rezzing",
+		"Activation",
 		card,
 		function () {
 		  //true here means ignore all costs (we have already paid them)
@@ -110,8 +110,8 @@ function Rez(card, ignoreAllCosts=false, onRezResolve=null, context=null, allowC
 			  Forfeit(fparams.card);
 			  payCreditsAndRez();
 		  },
-		  "Rezzing "+card.title,
-		  "Rezzing "+card.title,
+		  "Activation de "+card.title,
+		  "Activation de "+card.title,
 		  this,
 		  "forfeit",
 		  cancelCallback
@@ -124,7 +124,7 @@ function Rez(card, ignoreAllCosts=false, onRezResolve=null, context=null, allowC
   //all costs paid? rez it.	
   card.rezzed = true;
   card.renderer.FaceUp(); //in case Render is not forthcoming
-  Log("Corp rezzed " + GetTitle(card, true));
+  Log("La Corporation a activé " + GetTitle(card, true));
   var finishRez = function(cardsTrashed) {
     //call the resolve callback
     if (onRezResolve) onRezResolve.call(context);
@@ -166,7 +166,7 @@ function Rez(card, ignoreAllCosts=false, onRezResolve=null, context=null, allowC
   if (uniqueToTrash) {
 	Log(
 	  GetTitle(card) +
-		" is unique, the older copy will be unpreventably trashed."
+		" est unique, la copie la plus ancienne va être jetée."
 	);
 	Trash(uniqueToTrash, false, finishRez, this);
   }
@@ -182,7 +182,7 @@ function Rez(card, ignoreAllCosts=false, onRezResolve=null, context=null, allowC
 function RemoveFromGame(card) {
   card.host = null;
   MoveCard(card, removedFromGame);
-  Log(GetTitle(card, true) + " removed from the game");
+  Log(GetTitle(card, true) + " retirée du jeu");
 }
 
 /**
@@ -213,7 +213,7 @@ function Trash(cards, canBePrevented, afterTrashing, context, fromDamage) {
 	cards = [cards];
   }
   if (cards.length < 1) {
-	  Log("No cards trashed");
+	  Log("Aucune carte jeté");
 	  return;
   }
   if (canBePrevented) {
@@ -221,7 +221,7 @@ function Trash(cards, canBePrevented, afterTrashing, context, fromDamage) {
 	//currently giving whoever's turn it is priority...not sure this is always going to be right
     OpportunityForAvoidPrevent(playerTurn, "responsePreventableTrash", [], function () {
       Trash(intended.trash, false, afterTrashing, context);
-    }, "About to Trash");
+    }, "Sur le point de jeter une carte");
 	return;
   }
   //prevention opportunity has passed, from here all trashes are unpreventable
@@ -463,10 +463,10 @@ function Install(
 				var outStr = GetTitle(installingCard, true);
 				if (CheckCardType(installingCard, ["agenda", "asset", "upgrade"]))
 				  outStr =
-					"a card in root of " + CardServerName(installingCard, true);
+					"une carte à la racine de " + CardServerName(installingCard, true);
 				else if (CheckCardType(installingCard, ["ice"]))
-				  outStr = "ice protecting " + CardServerName(installingCard, true);
-				Log(PlayerName(installingCard.player) + " installed " + outStr);
+				  outStr = "glace protégeant " + CardServerName(installingCard, true);
+				Log(PlayerName(installingCard.player) + " installée " + outStr);
 				//if unique or a console, old one is immediately and unpreventably trashed (except if facedown, and facedown cards don't count for check)
 				var cardToReplace = null;
 				if (
@@ -480,7 +480,7 @@ function Install(
 					for (var i = 0; i < cardlist.length; i++) {
 					  if (installingCard != cardlist[i] && CheckSubType(cardlist[i], "Console")) {
 						cardToReplace = cardlist[i];
-						replaceReason = "a console";
+						replaceReason = "une console";
 					  }
 					}
 				  }
@@ -514,7 +514,7 @@ function Install(
 				if (cardToReplace) {
 					Log(
 						GetTitle(installingCard) +
-						  " is "+replaceReason+", the older card will be unpreventably trashed."
+						  " est "+replaceReason+", la carte précédente va être jetée."
 					);
 					Trash(cardToReplace, false, finishInstall, this);
 				}
@@ -554,7 +554,7 @@ function Install(
     if (destination == null) {
       destination = NewServer("Remote " + corp.serverIncrementer++, false);
       corp.remoteServers.push(destination);
-	  Log("Corp created a new remote server");
+	  Log("La corporation a créé un nouveau serveur");
 	  //currently giving whoever's turn it is priority...not sure this is always going to be right
 	  TriggeredResponsePhase(playerTurn, "responseOnCreateServer", [destination], installCommonHandler, "Server Created");
     }

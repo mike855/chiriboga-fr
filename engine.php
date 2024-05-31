@@ -75,19 +75,19 @@
 			<div id="menucontent" class="modal-content-inactive">
 				<span onclick="$('#menu').css('display','none');" class="close-cross">X</span>
 				<h1>Chiriboga</h1>
-				<button id="exittomenu" onclick="window.location.href='index.php';" class="button">Exit to main menu</button>
-				<button id="editdeck" onclick="window.location.href='decklauncher.php';" class="button">Edit this deck</button>
-				<button id="randomdeck" onclick="window.location.href='decklauncher.php';" class="button">Edit new random deck</button>
+				<button id="exittomenu" onclick="window.location.href='index.php';" class="button">Quitter vers le menu principal</button>
+				<button id="editdeck" onclick="window.location.href='decklauncher.php';" class="button">Editer ce deck</button>
+				<button id="randomdeck" onclick="window.location.href='decklauncher.php';" class="button">Editer un nouveau deck aléatoire</button>
 				<div style="float:right;" class="options">
-					<label for="narration"><input type="checkbox" id="narration">Narrate AI</label>
+					<label for="narration"><input type="checkbox" id="narration">Narrattion IA</label>
 					&emsp;
-					<label for="slowerai"><input type="checkbox" id="slowerai">Slower AI</label>
+					<label for="slowerai"><input type="checkbox" id="slowerai">IA plus lente</label>
 					&emsp;
-					<label for="largerhistory"><input type="checkbox" id="largerhistory">Larger history</label>
+					<label for="largerhistory"><input type="checkbox" id="largerhistory">Historique étendu</label>
 				</div>
-				<p>Chiriboga implements the game <a href="https://nullsignal.games/about/netrunner/">Android: Netrunner</a> with an AI opponent. Source is <a href="https://github.com/bobtheuberfish/chiriboga">available on GitHub</a>.</p>
-				<p>Includes all cards in Null Signal Games' <a href="https://nullsignal.games/products/system-gateway/">System Gateway</a> and <a href="https://nullsignal.games/products/system-update-2021/">System Update 2021</a> sets.<br/>
-				Card art is the property of Null Signal Games.<br/>
+				<p>Chiriboga implemente le jeu <a href="https://nullsignal.games/about/netrunner/">Android: Netrunner</a> avec un adversaire IA. Source : <a href="https://github.com/bobtheuberfish/chiriboga">disponible sur GitHub</a>.</p>
+				<p>Inclue toutes les cartes Null Signal Games' <a href="https://nullsignal.games/products/system-gateway/">System Gateway</a> et <a href="https://nullsignal.games/products/system-update-2021/">System Update 2021</a> .<br/>
+				Les images des cartes sont la propriété de Null Signal Games.<br/>
 				Includes <a href="https://nullsignal.games/about/nisei-visual-assets/">game symbols permitted for use by Null Signal Games</a> under CC BY-ND 4.0.<br/>
 				Chiriboga is not endorsed by Null Signal Games.</p>
 				<p class="acknowledgements">Special thanks to testers, including: <em>BadEpsilon, bowlsley, D-Smith, eniteris, Kwaice, Mentlegen, olompumpa, R41B, saff, Saintis, Ysengrin</em>.</p>

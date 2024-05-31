@@ -241,30 +241,30 @@ EOD;
 	?>
 		<div class="header"><a href="engine.php?faceoff=true"><img class="header-contents" src="images/chiriboga_icon.png"><span class="header-contents">Chiriboga<span></a></div>
 		<div class="tutorial-row">
-			<h3>Learn to play</h3>
-			<a href="engine.php?p=r&mentor=0" class="tutorial noselect" title="Clicks and Runs">1</a>
-			<a href="engine.php?p=r&mentor=1" class="tutorial noselect" title="Credits and Runner Card Types">2</a>
-			<a href="engine.php?p=r&mentor=2" class="tutorial noselect" title="Ice and Icebreakers">3</a>
-			<a href="engine.php?p=r&mentor=3" class="tutorial noselect" title="Assets, Trash Costs, and Run Events">4</a>
-			<a href="engine.php?p=r&mentor=4" class="tutorial noselect" title="Advancing, Scoring, and Damage">5</a>
-			<a href="engine.php?p=c&mentor=5" class="tutorial noselect" title="Upgrades, Root, and Trash on Install">6</a><br/>
+			<h3>Apprendre à jouer</h3>
+			<a href="engine.php?p=r&mentor=0" class="tutorial noselect" title="Clics et Piratages">1</a>
+			<a href="engine.php?p=r&mentor=1" class="tutorial noselect" title="Crédits et types de cartes Runner">2</a>
+			<a href="engine.php?p=r&mentor=2" class="tutorial noselect" title="Glaces et Brise-glace">3</a>
+			<a href="engine.php?p=r&mentor=3" class="tutorial noselect" title="Avoirs, Couts de suppression, and Evenements de Run">4</a>
+			<a href="engine.php?p=r&mentor=4" class="tutorial noselect" title="Avancer, Scorer, and Dégats">5</a>
+			<a href="engine.php?p=c&mentor=5" class="tutorial noselect" title="Extensions, Racine, and Supprimer à l'installation">6</a><br/>
 			<div class="ltp-link">or read <a href="https://nullsignal.games/players/learn-to-play/">Null Signal Games' Learn to Play guide</a></div>
 		</div>
 		<div class="row-column">
-			<div class="cell nosubtitle"><a class="runner" href="engine.php?ap=6&p=r&r=N4IglgJgpgdgLmOBPEAuEB2AbCANCAZyQLigFsBxAQ1IHcqVUBtLXVgRgCZcueBmHgBYeAVlE8AHLk4AGaXM7tpSzq1XSMG6VM46dATmmG+ck7jN9ul8wL63BAXQC+QA&c=N4IglgJgpgdgLmOBPEAuEB2DIA0IDOS+cUAtgOICGJA7pSqgNoDMGOr7AnFzgCwAMfQbwBMfAKwS+ANhl82vNtN45lqpRtXdp3DIL04MARkMmMY84YvNDNjCvuHJGZ+IC6AXyA"><img class="runner" src="images/menu_runner_1.png"><div class="caption"><span>Runner Tutorial Deck</span></div></a></div>
-			<div class="cell nosubtitle"><a class="runner" href="engine.php?p=r&r=N4IglgJgpgdgLmOBPEAuEB2AbCANCAZyQLigFsBxAQ1IHcqVUBtLXVgRgCZcueBmHgBYeAVlE8AHLk4AGaXM7tpSzq1XSMG6VM46dATmmG+ck7jN9ul8wL63h3blKnslr6Y8cPBAXQC+QA&c=N4IglgJgpgdgLmOBPEAuEB2DIA0IDOS+cUAtgOICGJA7pSqgNoDMGOr7AnFzgCwAMfQbwBMfAKwS+ANhl82vNtN45lqpRtXdp3DIL04MARkMmMY84YvNDNjCvuHJGZ5PEr3OcbO9e24-wAOVUlpYLCAXQBfIA"><img class="runner" src="images/menu_runner_2.png"><div class="caption"><span>Runner Advanced Deck</span></div></a></div>
-			<div class="cell"><a class="runner" href="decklauncher.php?sets=systemgateway&p=r&r=random"><img class="runner" src="images/menu_runner_3_sg.png"><div class="caption"><span>Runner Deckbuilding</span><span class="subtitle">(System Gateway only)</span></div></a></div>
-			<div class="cell"><a class="runner" href="decklauncher.php?sets=systemgateway-systemupdate2021&p=r&r=random"><img class="runner" src="images/menu_runner_4_sg_su21.png"><div class="caption"><span>Runner Deckbuilding</span><span class="subtitle">(with System Update 2021)</span></div></a></div>
-			<div class="cell"><a class="runner" href="decklauncher.php?p=r&r=random"><img class="runner" src="images/menu_runner_5_ms.png"><div class="caption"><span>Runner Deckbuilding</span><span class="subtitle">(up to Midnight Sun)</span></div></a></div>
+			<div class="cell nosubtitle"><a class="runner" href="engine.php?ap=6&p=r&r=N4IglgJgpgdgLmOBPEAuEB2AbCANCAZyQLigFsBxAQ1IHcqVUBtLXVgRgCZcueBmHgBYeAVlE8AHLk4AGaXM7tpSzq1XSMG6VM46dATmmG+ck7jN9ul8wL63BAXQC+QA&c=N4IglgJgpgdgLmOBPEAuEB2DIA0IDOS+cUAtgOICGJA7pSqgNoDMGOr7AnFzgCwAMfQbwBMfAKwS+ANhl82vNtN45lqpRtXdp3DIL04MARkMmMY84YvNDNjCvuHJGZ+IC6AXyA"><img class="runner" src="images/menu_runner_1.png"><div class="caption"><span>Deck débutant Runner</span></div></a></div>
+			<div class="cell nosubtitle"><a class="runner" href="engine.php?p=r&r=N4IglgJgpgdgLmOBPEAuEB2AbCANCAZyQLigFsBxAQ1IHcqVUBtLXVgRgCZcueBmHgBYeAVlE8AHLk4AGaXM7tpSzq1XSMG6VM46dATmmG+ck7jN9ul8wL63h3blKnslr6Y8cPBAXQC+QA&c=N4IglgJgpgdgLmOBPEAuEB2DIA0IDOS+cUAtgOICGJA7pSqgNoDMGOr7AnFzgCwAMfQbwBMfAKwS+ANhl82vNtN45lqpRtXdp3DIL04MARkMmMY84YvNDNjCvuHJGZ5PEr3OcbO9e24-wAOVUlpYLCAXQBfIA"><img class="runner" src="images/menu_runner_2.png"><div class="caption"><span>Deck booster Runner</span></div></a></div>
+			<div class="cell"><a class="runner" href="decklauncher.php?sets=systemgateway&p=r&r=random"><img class="runner" src="images/menu_runner_3_sg.png"><div class="caption"><span>R</span><span class="subtitle">(System Gateway uniquement)</span></div></a></div>
+			<div class="cell"><a class="runner" href="decklauncher.php?sets=systemgateway-systemupdate2021&p=r&r=random"><img class="runner" src="images/menu_runner_4_sg_su21.png"><div class="caption"><span>Runner Deckbuilding</span><span class="subtitle">(avec System Update 2021)</span></div></a></div>
+			<div class="cell"><a class="runner" href="decklauncher.php?p=r&r=random"><img class="runner" src="images/menu_runner_5_ms.png"><div class="caption"><span>Runner Deckbuilding</span><span class="subtitle">(jusqu'à Midnight Sun)</span></div></a></div>
 		</div><div class="row-column">
-			<div class="cell nosubtitle"><a class="corp" href="engine.php?ap=6&p=c&c=N4IglgJgpgdgLmOBPEAuEB2DIA0IDOS+cUAtgOICGJA7pSqgNoDMGOr7AnFzgCwAMfQbwBMfAKwS+ANhl82vNtN45lqpRtXdp3DIL04MARkMmMY84YvNDNjCvuHJGZ+IC6AXyA&r=N4IglgJgpgdgLmOBPEAuEB2AbCANCAZyQLigFsBxAQ1IHcqVUBtLXVgRgCZcueBmHgBYeAVlE8AHLk4AGaXM7tpSzq1XSMG6VM46dATmmG+ck7jN9ul8wL63BAXQC+QA"><img class="corp" src="images/menu_corp_1.png"><div class="caption"><span>Corp Tutorial Deck</span></div></a></div>
-			<div class="cell nosubtitle"><a class="corp" href="engine.php?p=c&c=N4IglgJgpgdgLmOBPEAuEB2DIA0IDOS+cUAtgOICGJA7pSqgNoDMGOr7AnFzgCwAMfQbwBMfAKwS+ANhl82vNtN45lqpRtXdp3DIL04MARkMmMY84YvNDNjCvuHJGZ5PEr3OcbO9e24-wAOVUlpYLCAXQBfIA&r=N4IglgJgpgdgLmOBPEAuEB2AbCANCAZyQLigFsBxAQ1IHcqVUBtLXVgRgCZcueBmHgBYeAVlE8AHLk4AGaXM7tpSzq1XSMG6VM46dATmmG+ck7jN9ul8wL63h3blKnslr6Y8cPBAXQC+QA"><img class="corp" src="images/menu_corp_2.png"><div class="caption"><span>Corp Advanced Deck</span></div></a></div>
-			<div class="cell"><a class="corp" href="decklauncher.php?sets=systemgateway&p=c&c=random"><img class="corp" src="images/menu_corp_3_sg.png"><div class="caption"><span>Corp Deckbuilding</span><span class="subtitle">(System Gateway only)</span></div></a></div>
-			<div class="cell"><a class="corp" href="decklauncher.php?sets=systemgateway-systemupdate2021&p=c&c=random"><img class="corp" src="images/menu_corp_4_sg_su21.png"><div class="caption"><span>Corp Deckbuilding</span><span class="subtitle">(with System Update 2021)</span></div></a></div>
-			<div class="cell"><a class="corp" href="decklauncher.php?p=c&r=random"><img class="corp" src="images/menu_corp_5_ms.png"><div class="caption"><span>Corp Deckbuilding</span><span class="subtitle">(up to Midnight Sun)</span></div></a></div>
+			<div class="cell nosubtitle"><a class="corp" href="engine.php?ap=6&p=c&c=N4IglgJgpgdgLmOBPEAuEB2DIA0IDOS+cUAtgOICGJA7pSqgNoDMGOr7AnFzgCwAMfQbwBMfAKwS+ANhl82vNtN45lqpRtXdp3DIL04MARkMmMY84YvNDNjCvuHJGZ+IC6AXyA&r=N4IglgJgpgdgLmOBPEAuEB2AbCANCAZyQLigFsBxAQ1IHcqVUBtLXVgRgCZcueBmHgBYeAVlE8AHLk4AGaXM7tpSzq1XSMG6VM46dATmmG+ck7jN9ul8wL63BAXQC+QA"><img class="corp" src="images/menu_corp_1.png"><div class="caption"><span>Deck débutant Corporation</span></div></a></div>
+			<div class="cell nosubtitle"><a class="corp" href="engine.php?p=c&c=N4IglgJgpgdgLmOBPEAuEB2DIA0IDOS+cUAtgOICGJA7pSqgNoDMGOr7AnFzgCwAMfQbwBMfAKwS+ANhl82vNtN45lqpRtXdp3DIL04MARkMmMY84YvNDNjCvuHJGZ5PEr3OcbO9e24-wAOVUlpYLCAXQBfIA&r=N4IglgJgpgdgLmOBPEAuEB2AbCANCAZyQLigFsBxAQ1IHcqVUBtLXVgRgCZcueBmHgBYeAVlE8AHLk4AGaXM7tpSzq1XSMG6VM46dATmmG+ck7jN9ul8wL63h3blKnslr6Y8cPBAXQC+QA"><img class="corp" src="images/menu_corp_2.png"><div class="caption"><span>Deck booster Corporation</span></div></a></div>
+			<div class="cell"><a class="corp" href="decklauncher.php?sets=systemgateway&p=c&c=random"><img class="corp" src="images/menu_corp_3_sg.png"><div class="caption"><span>Corp Deckbuilding</span><span class="subtitle">(System Gateway uniquement)</span></div></a></div>
+			<div class="cell"><a class="corp" href="decklauncher.php?sets=systemgateway-systemupdate2021&p=c&c=random"><img class="corp" src="images/menu_corp_4_sg_su21.png"><div class="caption"><span>Corp Deckbuilding</span><span class="subtitle">(avec System Update 2021)</span></div></a></div>
+			<div class="cell"><a class="corp" href="decklauncher.php?p=c&r=random"><img class="corp" src="images/menu_corp_5_ms.png"><div class="caption"><span>Corp Deckbuilding</span><span class="subtitle">(jusqu'à Midnight Sun)</span></div></a></div>
 		</div>
 		<div class="footer">
-			<span id="dev-info"></span><span class="nobreak">Source code <a href="https://github.com/bobtheuberfish/chiriboga">available on GitHub</a></span> <span class="landscape-only">&nbsp;| &nbsp;</span><span class="portrait-only"><br></span><span class="nobreak">Hardware Acceleration is required to use this site</span>
+			<span id="dev-info"></span><span class="nobreak">Source code <a href="https://github.com/bobtheuberfish/chiriboga">available on GitHub</a></span> <span class="landscape-only">&nbsp;| &nbsp;</span><span class="portrait-only"><br></span><span class="nobreak">Accélération matérielle requise pour ce site</span>
 		</div>
 	</body>
 </html>
